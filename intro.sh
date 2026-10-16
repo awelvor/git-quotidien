@@ -28,6 +28,7 @@ git log --oneline --graph essayons-switch
 
 1.3 git restore
 
-git restore --source=essayons-switch --dans-essayons-switch
+git restore --source=essayons-switch dans-essayons-switch.txt
 git status
+rm dans-essayons-switch.txt
 
