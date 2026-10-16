@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 rm -rf /tmp/linuxmag-repo-test
 mkdir -p /tmp/linuxmag-repo-test
 cd /tmp/linuxmag-repo-test
