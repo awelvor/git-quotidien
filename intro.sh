@@ -13,3 +13,21 @@ export GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME
 export GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL
 export GIT_COMMITTER_DATE=$GIT_AUTHOR_DATE
 git commit --message="Empty" --allow-empty
+
+1.2 git switch
+
+git switch --quiet --create essayons-switch
+git log --oneline --graph
+echo "Du contenu" > dans-essayons-switch.txt
+touch --date='01234567890' dans-essayons-switch.txt
+git add .
+git commit -m "Commit dans essayons-switch"
+
+git switch --quiet main
+git log --oneline --graph essayons-switch
+
+1.3 git restore
+
+git restore --source=essayons-switch --dans-essayons-switch
+git status
+
