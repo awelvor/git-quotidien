@@ -3,7 +3,7 @@ mkdir -p /tmp/linuxmag-repo-test
 cd /tmp/linuxmag-repo-test
 git init --object-forma=sha1 --initial-branch=main
 git config commit.gpgSign false
-git config tag.gpgSion false
+git config tag.gpgSign false
 git config core.abbrev 5
 export LANG=fr_FR.UTF-8
 export GIT_AUTHOR_NAME=moi
